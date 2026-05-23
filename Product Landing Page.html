@@ -1,0 +1,196 @@
+Solution for Build a Product Landing Page
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Watch Landing Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header id="header">
+    <img
+      id="header-img"
+      src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
+      alt="Logo"
+    >
+
+    <nav id="nav-bar">
+      <a class="nav-link" href="#features">Features</a>
+      <a class="nav-link" href="#video-section">Video</a>
+      <a class="nav-link" href="#pricing">Pricing</a>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <h1>Smart Watch Pro</h1>
+    <p>The perfect smartwatch for fitness and everyday life.</p>
+
+    <form
+      id="form"
+      action="https://www.freecodecamp.com/email-submit"
+    >
+      <input
+        id="email"
+        name="email"
+        type="email"
+        placeholder="Enter your email address"
+        required
+      >
+
+      <input
+        id="submit"
+        type="submit"
+        value="Get Started"
+      >
+    </form>
+  </section>
+
+  <section id="features">
+    <h2>Features</h2>
+
+    <div>
+      <h3>Health Tracking</h3>
+      <p>Monitor heart rate, sleep, and daily activity.</p>
+    </div>
+
+    <div>
+      <h3>Water Resistant</h3>
+      <p>Designed for workouts and outdoor adventures.</p>
+    </div>
+
+    <div>
+      <h3>Long Battery Life</h3>
+      <p>Up to 7 days of battery on a single charge.</p>
+    </div>
+  </section>
+
+  <section id="video-section">
+    <h2>Product Demo</h2>
+
+    <iframe
+      id="video"
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/y8Yv4pnO7qc"
+      title="Product Video"
+      allowfullscreen>
+    </iframe>
+  </section>
+
+  <section id="pricing">
+    <h2>Pricing</h2>
+
+    <div>
+      <h3>Basic</h3>
+      <p>$99</p>
+    </div>
+
+    <div>
+      <h3>Premium</h3>
+      <p>$149</p>
+    </div>
+
+    <div>
+      <h3>Ultimate</h3>
+      <p>$199</p>
+    </div>
+  </section>
+
+</body>
+</html>
+CSS
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #f4f4f4;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header-img {
+  width: 250px;
+}
+
+#nav-bar {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+#hero {
+  margin-top: 120px;
+  text-align: center;
+  padding: 40px;
+}
+
+#form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#email {
+  padding: 10px;
+  width: 300px;
+  margin-bottom: 10px;
+}
+
+#submit {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+#features,
+#video-section,
+#pricing {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#pricing {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+#pricing div {
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  #header {
+    flex-direction: column;
+  }
+
+  #nav-bar {
+    margin-top: 10px;
+  }
+
+  #pricing {
+    flex-direction: column;
+    align-items: center;
+  }
+}

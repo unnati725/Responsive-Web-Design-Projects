@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Python Documentation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav id="navbar">
+  <header>Python Documentation</header>
+
+  <a class="nav-link" href="#Introduction">Introduction</a>
+  <a class="nav-link" href="#Variables">Variables</a>
+  <a class="nav-link" href="#Data_Types">Data Types</a>
+  <a class="nav-link" href="#Functions">Functions</a>
+  <a class="nav-link" href="#Loops">Loops</a>
+</nav>
+
+<main id="main-doc">
+
+  <section class="main-section" id="Introduction">
+    <header>Introduction</header>
+
+    <p>Python is a popular programming language.</p>
+    <p>It is easy to learn and widely used.</p>
+
+    <code>print("Hello World")</code>
+
+    <ul>
+      <li>Easy syntax</li>
+      <li>Open source</li>
+    </ul>
+  </section>
+
+  <section class="main-section" id="Variables">
+    <header>Variables</header>
+
+    <p>Variables store data values.</p>
+    <p>You can assign values using the equals sign.</p>
+
+    <code>x = 10</code>
+
+    <ul>
+      <li>Store numbers</li>
+      <li>Store text</li>
+    </ul>
+  </section>
+
+  <section class="main-section" id="Data_Types">
+    <header>Data Types</header>
+
+    <p>Python has multiple built-in data types.</p>
+    <p>Examples include strings and integers.</p>
+
+    <code>name = "Unnati"</code>
+
+    <ul>
+      <li>String</li>
+      <li>Integer</li>
+    </ul>
+  </section>
+
+  <section class="main-section" id="Functions">
+    <header>Functions</header>
+
+    <p>Functions help organize code.</p>
+    <p>They can accept parameters and return values.</p>
+
+    <code>
+def greet():
+    print("Hello")
+    </code>
+
+    <ul>
+      <li>Reusable code</li>
+      <li>Improves readability</li>
+    </ul>
+  </section>
+
+  <section class="main-section" id="Loops">
+    <header>Loops</header>
+
+    <p>Loops repeat a block of code.</p>
+    <p>Python supports for and while loops.</p>
+
+    <code>
+for i in range(5):
+    print(i)
+    </code>
+
+    <ul>
+      <li>for loop</li>
+      <li>while loop</li>
+    </ul>
+  </section>
+
+</main>
+
+</body>
+</html>
+CSS
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  font-family: Arial, sans-serif;
+}
+
+#navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  border-right: 2px solid #333;
+  background-color: #f4f4f4;
+  overflow-y: auto;
+}
+
+#navbar header {
+  font-size: 1.5rem;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.nav-link {
+  display: block;
+  padding: 15px 20px;
+  text-decoration: none;
+  color: black;
+  border-top: 1px solid #ccc;
+}
+
+.nav-link:hover {
+  background-color: #ddd;
+}
+
+#main-doc {
+  margin-left: 270px;
+  padding: 20px;
+}
+
+.main-section {
+  margin-bottom: 40px;
+}
+
+.main-section header {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.main-section p {
+  margin-bottom: 10px;
+}
+
+code {
+  display: block;
+  background: #f0f0f0;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+ul {
+  margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+
+  #navbar {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  #main-doc {
+    margin-left: 0;
+  }
+}

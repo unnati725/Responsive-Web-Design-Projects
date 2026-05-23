@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav id="navbar">
+    <a href="#welcome-section">Home</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="welcome-section">
+    <h1>Hi, I'm Unnati Rakshaskar</h1>
+    <p>Python Developer | C++ Programmer | Web Development Learner</p>
+  </section>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+
+    <div class="project-tile">
+      <a href="https://codepen.io/" target="_blank">
+        Tribute Page Project
+      </a>
+    </div>
+
+    <div class="project-tile">
+      <a href="https://codepen.io/" target="_blank">
+        Technical Documentation Page
+      </a>
+    </div>
+
+    <div class="project-tile">
+      <a href="https://codepen.io/" target="_blank">
+        Product Landing Page
+      </a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+
+    <a
+      id="profile-link"
+      href="https://github.com/"
+      target="_blank"
+    >
+      Visit My GitHub Profile
+    </a>
+  </section>
+
+</body>
+</html>
+CSS
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Fixed Navbar */
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 15px;
+  text-align: center;
+}
+
+#navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+/* Welcome Section */
+#welcome-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #f4f4f4;
+}
+
+#welcome-section h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+/* Projects */
+#projects {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.project-tile {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.project-tile a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Contact */
+#contact {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+#profile-link {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+  #welcome-section h1 {
+    font-size: 2rem;
+  }
+
+  #navbar a {
+    display: block;
+    margin: 10px 0;
+  }
+}
+

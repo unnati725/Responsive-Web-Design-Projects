@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1 id="title">Student Feedback Survey</h1>
+
+  <p id="description">
+    Please fill out this survey to help us improve our courses.
+  </p>
+
+  <form id="survey-form">
+
+    <label id="name-label" for="name">Name</label>
+    <input
+      id="name"
+      type="text"
+      placeholder="Enter your name"
+      required
+    >
+
+    <label id="email-label" for="email">Email</label>
+    <input
+      id="email"
+      type="email"
+      placeholder="Enter your email"
+      required
+    >
+
+    <label id="number-label" for="number">Age</label>
+    <input
+      id="number"
+      type="number"
+      min="10"
+      max="100"
+      placeholder="Enter your age"
+    >
+
+    <label for="dropdown">Favorite Subject</label>
+    <select id="dropdown">
+      <option>Select one</option>
+      <option>Mathematics</option>
+      <option>Computer Science</option>
+      <option>Physics</option>
+    </select>
+
+    <p>Would you recommend this course?</p>
+
+    <label>
+      <input
+        type="radio"
+        name="recommend"
+        value="yes"
+      > Yes
+    </label>
+
+    <label>
+      <input
+        type="radio"
+        name="recommend"
+        value="no"
+      > No
+    </label>
+
+    <p>What would you like to improve?</p>
+
+    <label>
+      <input
+        type="checkbox"
+        value="content"
+      > Course Content
+    </label>
+
+    <label>
+      <input
+        type="checkbox"
+        value="projects"
+      > Projects
+    </label>
+
+    <label>
+      <input
+        type="checkbox"
+        value="support"
+      > Student Support
+    </label>
+
+    <p>Additional Comments</p>
+
+    <textarea
+      rows="5"
+      placeholder="Enter your comments here"
+    ></textarea>
+
+    <button
+      id="submit"
+      type="submit"
+    >
+      Submit
+    </button>
+
+  </form>
+
+</body>
+</html>
+CSS
+
+
